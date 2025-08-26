@@ -15,7 +15,7 @@ if [ ! -z ${IV_HWADDR+x} ]; then
     if [ "$mac" != "$mac_client" ]; then
         echo "$date $user trying to log in on UNREGISTERED device" >> /etc/openvpn/scripts/login.log; exit 1
    else
-        echo $date $user SUCESSFULL LOGIN $remote_ip $local_ip $mac >> /etc/openvpn/scripts/login.log; exit 0
+        echo $date $user SUCCESSFUL LOGIN $remote_ip $local_ip $mac >> /etc/openvpn/scripts/login.log; exit 0
     fi
 else
     echo "$date $user MAC UNKNOWN. We need set push-peer-info option. $mac" >> /etc/openvpn/scripts/login.log; exit 1
