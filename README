@@ -1,0 +1,5 @@
+Логгирование vpn соединений и проверка пользователя по mac адресу
+
+echo "client-connect /etc/openvpn/scripts/connect_client.sh" >> /etc/openvpn/server.conf
+cp -a mac_list /etc/openvpn/scripts/mac_list
+tail -f /etc/openvpn/scripts/login.log
